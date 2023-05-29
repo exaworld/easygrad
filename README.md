@@ -11,16 +11,24 @@ The purpose of this project is to serve as an educational resource and demonstra
 
 #### Create Value objects
 a = Value(-4.0)
+
 b = Value(2.0)
 
 #### Perform operations
 c = a + b
+
 d = a * b + b**3
+
 c += c + 1
+
 c += 1 + c + (-a)
+
 d += d * 2 + (b + a).relu()
+
 d += 3 * d + (b - a).relu()
+
 e = c - d
+
 f = e**2
 
 #### Create a neuron
@@ -42,4 +50,4 @@ model = MLP(10, [(5, 'relu'), (5, 'relu'), (1, 'sigmoid')])
 output = model([1, 2, 3])
 
 ## Acknowledgements
-This library is based on an original micrograd library developed by [karpathy](https://github.com/karpathy/micrograd)
+This library is based on the original micrograd library developed by [karpathy](https://github.com/karpathy/micrograd)
